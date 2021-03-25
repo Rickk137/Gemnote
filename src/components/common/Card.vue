@@ -1,7 +1,6 @@
 <template>
-  <div class="flex items-center">
-    <img class="mr-2" src="@/assets/logo.svg" width="20" />
-    GEMNOTE
+  <div class="border border-gray-300 p-5 text-primary">
+    <slot></slot>
   </div>
 </template>
 

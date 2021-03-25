@@ -1,0 +1,12 @@
+* {
+  font-weight: 500;
+}
+.btn {
+  height: 40px;
+  border: 1px solid #24292c;
+  padding: 0 0.8rem;
+  font-size: 13px;
+  &:focus {
+    outline: none;
+  }
+}
