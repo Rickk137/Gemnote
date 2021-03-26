@@ -2,11 +2,15 @@
   font-weight: 500;
 }
 .btn {
-  height: 40px;
+  height: 44px;
   border: 1px solid #24292c;
   padding: 0 0.8rem;
   font-size: 13px;
+  white-space: nowrap;
   &:focus {
     outline: none;
+  }
+  &.wide {
+    width: 150px;
   }
 }

@@ -9,6 +9,9 @@ module.exports = {
         primary: "#24292C",
         white: colors.white,
       },
+      container: {
+        center: true,
+      },
     },
   },
   variants: {

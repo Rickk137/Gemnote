@@ -1,7 +1,7 @@
 <template>
   <div class="md:flex flex-col md:flex-row md:min-h-screen w-full">
     <Sidebar />
-    <div class="p-20 w-full">
+    <div class="py-20 px-24 w-full container max-w-full">
       <router-view></router-view>
     </div>
   </div>
