@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col bg-primary text-white flex-shrink-0 pt-20 pb-10 fixed h-full z-50 transition duration-200 transform"
+    class="flex flex-col bg-primary text-white flex-shrink-0 pt-20 pb-10 fixed h-full z-50 transition duration-200 transform md:transform-none"
     :class="{ '-translate-x-full': !drawer }"
   >
     <img

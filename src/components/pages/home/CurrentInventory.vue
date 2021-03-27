@@ -6,9 +6,9 @@
       :height="100"
       class="mr-4"
     />
-    <div class="flex flex-col">
+    <div class="flex flex-col justify-center">
       <span class="mb-2"> Current inventory <br /> </span>
-      <div class="flex items-end">
+      <div class="flex items-end mt-4">
         <span class="text-3xl mt-4 block mr-5"> 400 </span>
         <button class="btn">View orders</button>
       </div>
