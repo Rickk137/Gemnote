@@ -19,11 +19,12 @@
 
     <ul class="flex-col mt-4">
       <li
-        class="hover:bg-white hover:text-primary transition duration-200 transition-colors"
+        class="hover:border-white border-l-2 border-transparent transition duration-200 transition-colors"
+        :class="{ 'border-white': $route.path === link.route }"
         v-for="(link, i) in links"
         :key="i"
       >
-        <router-link :to="link.route" class="py-2.5 px-12 block">
+        <router-link class="py-2.5 px-12 block" :to="link.route">
           {{ link.title }}
         </router-link>
       </li>
