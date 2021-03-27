@@ -1,9 +1,16 @@
 <template>
   <div
-    class="flex flex-col bg-primary w-full md:w-64 text-white flex-shrink-0 py-10"
+    class="flex flex-col bg-primary w-full md:w-80 text-white flex-shrink-0 py-10 fixed h-full z-50 transition duration-200 transform"
+    :class="{ '-translate-x-full': !drawer }"
   >
+    <img
+      width="20"
+      src="@/assets/img/close.svg"
+      class="absolute top-5 right-5 md:hidden"
+      @click="toggleDrawer"
+    />
     <div class="px-12">
-      <img class="w-full" src="@/assets/img/logoBig.png" />
+      <img src="@/assets/img/logoBig.png" width="160" />
 
       <p class="mt-7 mb-6">Ashley Wong</p>
 
@@ -25,6 +32,8 @@
 </template>
 
 <script>
+import { mapState, mapActions } from "vuex";
+
 export default {
   data() {
     return {
@@ -60,6 +69,12 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    ...mapState(["drawer"]),
+  },
+  methods: {
+    ...mapActions(["toggleDrawer"]),
   },
 };
 </script>

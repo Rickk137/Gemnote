@@ -2,14 +2,14 @@
   <div class="flex flex-col">
     <h3 class="text-primary text-3xl mb-4">Welcome to Gemnote, Ashley!</h3>
     <div class="py-5">
-      <div class="flex mb-4">
-        <Card class="flex mr-4 flex-1">
-          <div class="flex flex-1 flex-col justify-between">
+      <div class="flex flex-col md:flex-row mb-4">
+        <Card class="flex flex-wrap mr-0 md:mr-4 mb-4 md:mb-0 flex-1">
+          <div class="flex flex-1 flex-col justify-between mb-4 md:mb-0">
             Total number of <br />
             orders this month <br />
             <span class="text-4xl mt-4 block"> 2,736 </span>
           </div>
-          <div class="flex-1 self-stretch">
+          <div class="flex-1 self-stretch hidden md:inline-block">
             <div class="bg-gray-300 mx-auto h-full" style="width: 1px"></div>
           </div>
 
@@ -23,7 +23,7 @@
           </div>
         </Card>
 
-        <Card class="flex flex-1">
+        <Card class="flex flex-1 flex-wrap">
           <DoughnutChart
             :chartdata="currentInventory"
             :width="100"
@@ -42,9 +42,9 @@
 
       <Card class="w-full mb-4">
         <h4 class="text-primary">Trending gifts in your store</h4>
-        <div class="flex items-center">
+        <div class="flex items-center flex-col md:flex-row">
           <div
-            class="flex flex-1 items-center trending-items overflow-x-auto mt-4"
+            class="flex flex-1 items-center trending-items overflow-x-auto mt-4 mb-4 md:mb-0"
           >
             <img src="@/assets/img/item1.png" />
             <img src="@/assets/img/item2.png" />
@@ -62,8 +62,9 @@
           <h4 class="text-primary">Total gifts this year</h4>
           <button class="btn px-10">Download report</button>
         </div>
-
-        <BarChart :chartdata="chartdata" />
+        <div class="overflow-auto">
+          <BarChart style="min-width: 500px" :chartdata="chartdata" />
+        </div>
       </Card>
     </div>
   </div>

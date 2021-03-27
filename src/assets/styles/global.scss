@@ -1,16 +1,11 @@
+@import './button';
+
 * {
   font-weight: 500;
 }
-.btn {
-  height: 44px;
-  border: 1px solid #24292c;
-  padding: 0 0.8rem;
-  font-size: 13px;
-  white-space: nowrap;
-  &:focus {
-    outline: none;
-  }
-  &.wide {
-    width: 150px;
-  }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
