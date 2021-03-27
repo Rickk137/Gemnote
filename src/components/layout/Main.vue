@@ -1,8 +1,8 @@
 <template>
   <div class="md:flex flex-col md:flex-row md:min-h-screen w-full">
-    <Sidebar />
+    <Sidebar class="w-full md:w-80" />
     <div
-      class="py-6 md:py-20 px-6 md:px-24 w-full container max-w-full ml-0 md:ml-64"
+      class="py-6 md:py-20 px-6 md:px-24 w-full container max-w-full ml-0 md:ml-80"
     >
       <img
         width="25"

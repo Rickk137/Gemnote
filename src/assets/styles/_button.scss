@@ -1,13 +1,20 @@
 .btn {
-  height: 44px;
+  height: 48px;
   border: 1px solid #24292c;
+  color: #24292c;
   padding: 0 0.8rem;
-  font-size: 13px;
+  font-size: 14px;
   white-space: nowrap;
+  transition: color 300ms, background-color 200ms;
+  text-align: center;
+  &:hover {
+    background: #24292c;
+    color: white;
+  }
   &:focus {
     outline: none;
   }
   &.wide {
-    width: 150px;
+    min-width: 160px;
   }
 }

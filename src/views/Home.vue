@@ -44,7 +44,7 @@
         <h4 class="text-primary">Trending gifts in your store</h4>
         <div class="flex items-center flex-col md:flex-row">
           <div
-            class="flex flex-1 items-center trending-items overflow-x-auto mt-4 mb-4 md:mb-0"
+            class="flex flex-1 items-center trending-items overflow-x-auto mt-4 mb-4 md:mb-0 mr-4"
           >
             <img src="@/assets/img/item1.png" />
             <img src="@/assets/img/item2.png" />

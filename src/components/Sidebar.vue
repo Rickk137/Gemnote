@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col bg-primary w-full md:w-80 text-white flex-shrink-0 py-10 fixed h-full z-50 transition duration-200 transform"
+    class="flex flex-col bg-primary text-white flex-shrink-0 py-10 fixed h-full z-50 transition duration-200 transform"
     :class="{ '-translate-x-full': !drawer }"
   >
     <img
@@ -19,7 +19,7 @@
 
     <ul class="flex-col mt-4">
       <li
-        class="hover:bg-white hover:bg-opacity-30 transition transition-colors"
+        class="hover:bg-white hover:text-primary transition duration-200 transition-colors"
         v-for="(link, i) in links"
         :key="i"
       >
