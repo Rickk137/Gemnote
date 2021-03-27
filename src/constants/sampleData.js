@@ -1,4 +1,4 @@
-export default [
+export const totalGifts = [
   { label: "Jan", value: 100 },
   { label: "Feb", value: 200 },
   { label: "Mar", value: 300 },

@@ -10,7 +10,7 @@
       @click="toggleDrawer"
     />
     <div class="px-12">
-      <img src="@/assets/img/logoBig.png" width="160" />
+      <img src="@/assets/img/logoBig.png" width="170" />
 
       <p class="mt-7 mb-6">Ashley Wong</p>
 

@@ -74,7 +74,7 @@
 import Card from "@/components/common/Card";
 import BarChart from "@/components/common/chart/BarChart";
 import DoughnutChart from "@/components/common/chart/DoughnutChart";
-import SampleData from "@/constants/sample.js";
+import { totalGifts } from "@/constants/sampleData.js";
 
 export default {
   name: "Home",
@@ -86,13 +86,13 @@ export default {
   data() {
     return {
       chartdata: {
-        labels: SampleData.map((item) => item.label),
+        labels: totalGifts.map((item) => item.label),
         datasets: [
           {
             label: "Total gifts this year",
             barThickness: 25,
             backgroundColor: "rgba(0,0,0,0.2)",
-            data: SampleData.map((item) => item.value),
+            data: totalGifts.map((item) => item.value),
           },
         ],
       },

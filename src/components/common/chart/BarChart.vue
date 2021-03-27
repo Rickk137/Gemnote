@@ -20,21 +20,42 @@ export default {
         xAxes: [
           {
             gridLines: {
+              color: "#D2D2D2",
+              lineWidth: 1.5,
               drawOnChartArea: false,
+              drawTicks: false,
             },
+            ticks: {
+              padding: 20,
+              fontSize: 13,
+              fontStyle: "bold",
+            },
+            borderWidth: 4,
           },
         ],
         yAxes: [
           {
             gridLines: {
+              color: "#D2D2D2",
+              lineWidth: 1.5,
               drawOnChartArea: false,
+              drawTicks: false,
             },
             ticks: {
               beginAtZero: true,
+              display: false,
             },
-            borderColor: "red",
           },
         ],
+      },
+
+      layout: {
+        padding: {
+          left: 20,
+          right: 10,
+          top: 10,
+          bottom: 0,
+        },
       },
     },
   }),
