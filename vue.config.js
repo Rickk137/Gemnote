@@ -6,8 +6,10 @@ module.exports = {
     appleMobileWebAppCapable: "yes",
     appleMobileWebAppStatusBarStyle: "black",
 
+    workboxPluginMode: "InjectManifest",
     workboxOptions: {
-      skipWaiting: true,
+      swSrc: "./src/sw.js",
+      swDest: "service-worker.js",
     },
   },
 };
